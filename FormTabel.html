@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Latihan FormTable</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="color: blue;">Latihan Form dalam Tabel</h1>
+        <form action="#" method="POST">
+        <table>
+            <tr>
+                <td>Nama Depan:</td>
+                <td><input type="text" name="Nama" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nama Belakang:</td>
+                <td><input type="text" name="NamaBelakang" size="50"></td>
+            </tr>
+            <tr>
+                <td>Alamat :</td>
+                <td><textarea name="Alamat" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir :</td>
+                <td><input type="date" name="TanggalLahir"></td>
+            </tr>
+            <tr>
+                <td>Berat Badan, Tinggi Badan</td>
+                <td><input type="number" name="BeratBadan"> kg, <input type="number" name="TinggiBadan"> cm</td>
+            </tr>
+            <tr>
+                <td>Warna Favorit :</td>
+                <td><input type="color" name="WarnaFavorit"></td>
+            </tr>
+            <tr>
+                <td>user name :</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Hobby</td>
+                <td><input type="checkbox" name="hobby[]"> Membaca <br>
+                    <input type="checkbox" name="hobby[]"> Tulis <br>
+                    <input type="checkbox" name="hobby[]"> Makan <br>
+                    <input type="checkbox" name="hobby[]"> Minum <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td><input type="radio" name="jk[]"> Laki-laki <br>
+                    <input type="radio" name="jk[]"> Perempuan <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Kota Asal :</td>
+                <td>
+                    <select name="kota">
+                        <option>--Pilih Kota--</option>
+                        <option value="Kediri">Kediri</option>
+                        <option value="Malang">Malang</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Batu">Batu</option>
+                        <option value="Semarang">Semarang</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload Gambar :</td>
+                <td><input type="file" name="gambar"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="KIRIM" class="btn kirim"></td>
+                <td><input type="reset" value="Reset" class="btn reset"></td>
+                <td><input type="button" value="KLIK" class="btn klik" onclick="alert('Yaah Gk bisaaa')"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
